@@ -1,0 +1,18 @@
+Design plans:
+
+1 Page
+
+The top of the page will provides scroll down links to all of the following sections:
+
+About Me: Info will probably be on the right side
+Projects:
+    Grid format, 3 to 4 columns with a small description and thumbnail of each project. A link will be provided to access the project. Everything centered
+Resume:
+
+CodeCrew Journey Audio Logs:
+(iframe? able to play the logs on the site)
+Contact:
+
+Each section will have an alternating background.
+
+At the bottom right there will be a fixed arrow that allows the user to scroll back up the the top of the page.
