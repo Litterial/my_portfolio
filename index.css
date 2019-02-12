@@ -36,11 +36,13 @@ width:65%;
 
 }
 
-span
+a
 {
     margin:0 2%;
+    color:black;
+    text-decoration-line: none;
 }
-#aboutLinkt
+#aboutLink
 {
     grid-column: 1;
     grid-row: 1;
