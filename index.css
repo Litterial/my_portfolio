@@ -196,10 +196,38 @@ margin:0 10%
     text-align: left;
     font-size: 1.5rem;
 }
+/**************************************************Audio****************************************************************/
+#audioGrid
+{
+    display:grid;
+    grid-template-areas:
+    "Zero One Two Three"
+    "Four Five Six Seven";
 
+}
 
+#Alpha
+{
+    grid-area: Zero;
+}
+#Week1
+{
+    grid-area:One;
+}
+#Week2
+{
+    grid-area:Two;
+}
+#Week3
+{
+    grid-area:Three;
+}
+#Week4
+{
+    grid-area: Four;
+}
 
-
+/**************************************************************************************************************************/
 div{
     text-align: center;
     padding-bottom: 5%;
