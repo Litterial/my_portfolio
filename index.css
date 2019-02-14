@@ -220,6 +220,10 @@ margin:0 10%
 
 /************************************************Education**************************************************************/
 
+nav:nth-child(6)>article
+{
+    text-align: left;
+}
 div:nth-child(6) p {
     position: relative;
     left: 2%;
@@ -238,6 +242,17 @@ div:nth-child(6) p {
 
 }
 
+.yearsAttended
+{
+position:relative;
+float:right;
+}
+nav:nth-child(6)>nav
+{
+clear:both;
+    text-align: left;
+
+}
 /**************************************************Audio****************************************************************/
 
 
