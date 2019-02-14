@@ -10,22 +10,25 @@ div*
 {
     margin:0;
 }
+
+*{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
 /***************************************************Search Bar*********************************************************/
 #mainPage  /*background*/
 {
 
     background: url(beautiful-blur-bright-326055.jpg)no-repeat;
-    opacity:0.5%;
 }
 
 .container {                     /*grid for search*/
     position: relative;
-    left: 17%;
+    left: 15%;
     grid-template-rows: repeat(10, auto);
     text-align: center;
-    width: 65%;
+    width: 70%;
     background-color: #2fe4ff;
-    border: 1px solid black;
+    padding:1%;
 }
 
 #aboutLink
@@ -59,7 +62,7 @@ a          /*Margin for links*/
     margin: 0 2%;
     color: black;
     text-decoration-line: none;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
 a:hover
@@ -98,7 +101,6 @@ div p:nth-of-type(2)
 {
     font-size:2.5rem;
     text-align: center;
-    margin-top:0;
 
 }
 /*****************************************Background for the Sections***************************************************/
@@ -108,7 +110,7 @@ div p:nth-of-type(2)
 }
 
 .dark{
-    background:lightskyblue;
+    background-color: #87cefa;
 }
 /**************************************************About Me************************************************************/
 
@@ -128,7 +130,7 @@ div:nth-child(3)>p
     font-size: 2.3rem;
 }
 
-div>article
+div:nth-child(3)>article
 {
 
     grid-column:2;
@@ -139,11 +141,29 @@ div>article
     border-left:5px solid black;
     padding-left:3%;
 }
+/****************************************************Skills************************************************************/
+div:nth-child(4)>p
+{
+    font-size: 2.3rem;
+    margin-top:0;
+    padding-top: 4.082%;
+}
+
+div:nth-child(4)>span
+{
+    margin:0 1%;
+    font-size: 1.5rem;
+    border:1px solid black;
+    background:gray;
+    padding:0.5%;
+}
 /****************************************************Projects**********************************************************/
-div:nth-child(4) p
+div:nth-child(5) p
 {
     font-size:2.3rem;
     margin-top:0;
+    padding-top: 4.082%;
+
 }
 
 .projectGrid
@@ -197,12 +217,49 @@ margin:0 10%
     text-align: left;
     font-size: 1.5rem;
 }
+
+/************************************************Education**************************************************************/
+
+div:nth-child(6) p {
+    position: relative;
+    left: 2%;
+    grid-column: 1;
+    grid-row: 1/5;
+    font-size: 2.3rem;
+}
+#code {
+    grid-column: 2;
+    grid-row: 1/5;
+    font-size: 1.5rem;
+    margin: 6% 10% 0 10%;
+    text-align: left;
+    border-left:5px solid black;
+    padding-left: 3%;
+
+}
+
 /**************************************************Audio****************************************************************/
+
+
+
+div:nth-child(7) p
+ {
+     font-size:2.3rem;
+     margin-top:0;
+     padding-top: 4.082%;
+ }
+
+div:nth-child(7) p:nth-of-type(2)
+{
+    font-size: 1.5rem;
+}
 #audioGrid
 {
     display:grid;
     grid-template-areas:
+    "ZeroH OneH TwoH ThreeH"
     "Zero One Two Three"
+    "FourH FiveH SixH SevenH"
     "Four Five Six Seven";
 
 }
@@ -228,6 +285,40 @@ margin:0 10%
     grid-area: Four;
 }
 
+#header0
+{
+   grid-area: ZeroH;
+}
+#header1
+{
+    grid-area: OneH;
+}
+#header2
+{
+    grid-area: TwoH;
+}
+#header3
+{
+    grid-area: ThreeH;
+}
+#header4
+{
+    grid-area: FourH;
+}
+#header5
+{
+    grid-area: FiveH;
+}
+#header6
+{
+    grid-area: SixH;
+}
+#header7
+{
+    grid-area: SevenH;
+}
+
+
 .spaceBottom
 {
     margin-bottom:4%;
@@ -238,26 +329,24 @@ div{
     padding-bottom: 5%;
 }
 
-div:nth-child(5) p
+
+
+div:nth-child(8) p
 {
     font-size:2.3rem;
     margin-top:0;
-    text-align:center;
-}
-
-div:nth-child(6) p
-{
-    font-size:2.3rem;
-    margin-top:0
-}
-div:nth-child(7) p
-{
-    font-size:2.3rem;
-    margin-top:0
+    padding-top: 4.082%;
 }
 
 
-div:nth-child(5)
+
+div:nth-child(6)
 {
     text-align: left;
+}
+div:nth-child(9)>p
+{
+    font-size:2.3rem;
+    margin-top:0;
+    padding-top: 4.082%;
 }
