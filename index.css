@@ -17,6 +17,10 @@ div*
 
     margin:0;
 }
+div{
+    text-align: center;
+    padding-bottom: 5%;
+}
 
 /***************************************************Search Bar*********************************************************/
 #mainPage  /*background*/
@@ -80,13 +84,14 @@ background-color: black;
 {
     position:fixed;
     display:block;
-    right:1%;
+    right:0%;
     bottom:0;
     border-radius:50%;
     height:8%;
     width:4%;
     background:url('resizearrow.png')no-repeat;
     border:none;
+    scroll-behavior:smooth;
 }
 /**********************************************Other half of main page*************************************************/
 #myName
@@ -112,10 +117,6 @@ footer:nth-of-type(4)
     animation-delay:1.5s;
 }
 
-footer:nth-of-type(5)
-{
-    animation-delay:1.75s;
-}
 
 div:nth-of-type(1)>footer:nth-of-type(3)>p
 {
@@ -294,8 +295,9 @@ div:nth-child(7)>p  /*Education*/
     margin-top:0;
     padding-top: 4.082%;
     left:2%;
-    grid-column:1;
-    grid-row:1/10;
+    text-decoration: underline;
+    /*grid-column:1;
+    grid-row:1/10;*/
 }
 /*nav:nth-child(7)>article
 {
@@ -308,34 +310,64 @@ div:nth-child(7)>p  /*Education*/
     grid-row: 1/5;
     font-size: 2.3rem;
 }*/
-#code
-{
-    grid-column: 2;
-    grid-row: 1/5;
-    font-size: 1.3rem;
-    margin: 6% 10% 0 0%;
-    text-align: left;
-    border-left:5px solid black;
-    padding-left: 3%;
-}
+
 
 .yearsAttended
 {
 position:relative;
 float:right;
+right:20%;
 }
-/*nav:nth-child(7)>nav
+.collegeAttended
 {
-clear:both;
-    text-align: left;
+   /* position:relative;*/
+    float:left;
+    left:30%;
+}
 
+/*.blockStyle
+{
+    display: block;
+    clear:both;
 }*/
-/*nav:nth-child(6)
- {
-     text-align: left;
- }*/
-/**************************************************Resume***************************************************************/
 
+#educationGrid
+{
+    position:relative;
+    left:20%;
+    display:grid;
+    grid-template-areas:
+    "College1 Year1"
+    "College2 Year2"
+    "College3 Year3";
+    text-align: left;
+    font-size:1.3rem;
+}
+
+#codeC
+{
+    grid-area: College1;
+}
+#codeDates
+{
+    grid-area: Year1;
+}
+#UofM
+{
+    grid-area: College2;
+}
+#uofmDates
+{
+    grid-area:Year2;
+}
+#SW
+{
+    grid-area: College3;
+}
+#swDates
+{
+    grid-area: Year3;
+}
 
 
 /**************************************************Audio****************************************************************/
@@ -446,10 +478,7 @@ div:nth-child(8) p:nth-of-type(2)
     margin-bottom:4%;
 }
 /**************************************************************************************************************************/
-div{
-    text-align: center;
-    padding-bottom: 5%;
-}
+
 
 
 
@@ -473,9 +502,3 @@ div:nth-child(9)>p
 }
 
 
-
-#fontTest
-{
-    font-family:"KacstDigital";
-    font-size:1.5rem;
-}
