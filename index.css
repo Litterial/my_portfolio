@@ -3,10 +3,10 @@ html
 scroll-behavior:smooth;
 }
 
-body,html
+html,body
 {
     height: 100%;
-    width:100%;
+    max-width:100%;
     margin:0;
     background-color:#87cefa ;
 }
@@ -20,6 +20,7 @@ div*
 div{
     text-align: center;
     padding-bottom: 5%;
+    border:1px solid black;
 }
 
 /***************************************************Search Bar*********************************************************/
@@ -84,7 +85,7 @@ background-color: black;
 {
     position:fixed;
     display:block;
-    right:0%;
+    right:0;
     bottom:0;
     border-radius:50%;
     height:8%;
@@ -231,6 +232,7 @@ div:nth-child(6) p
 .projectGrid
 {
     display: grid;
+    grid-template-column: repeat(12,1fr);
     margin:auto;
 }
 
@@ -396,7 +398,6 @@ div:nth-child(8) p:nth-of-type(2)
     "Zero One Two Three"
     "FourH FiveH SixH SevenH"
     "Four Five Six Seven";
-
 }
 
 #Alpha
@@ -428,7 +429,7 @@ div:nth-child(8) p:nth-of-type(2)
 #Week5
 {
     grid-area: Five;
-    padding-left: 10%;   padding-left: 10%;
+    padding-left: 10%;
 }
 
 #header0
@@ -471,6 +472,14 @@ div:nth-child(8) p:nth-of-type(2)
     grid-area: SevenH;
     font-size: 1.3rem;
 }
+
+/*
+audio
+{
+    width: 300px;
+    height: 54px;
+}
+*/
 
 
 .spaceBottom
