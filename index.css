@@ -3,7 +3,7 @@ body,html
     height: 100%;
     width:100%;
     margin:0;
-    background-color: #adadad;
+    background-color:#87cefa ;
 }
 
 div*
@@ -41,19 +41,14 @@ div*
     grid-column: 4;
     grid-row: 1;
 }
-#resumeLink
-{
-    grid-column: 5;
-    grid-row: 1;
-}
 #codecrewLink
 {
-    grid-column:6;
+    grid-column:5;
     grid-row: 1;
 }
 #contactLink
 {
-    grid-column:7;
+    grid-column:6;
     grid-row: 1;
 }
 a          /*Margin for links*/
@@ -171,6 +166,7 @@ div:nth-child(4)>p
     grid-column:1;
     grid-row: 1/10;
     font-size: 2.3rem;
+    font-weight: lighter;
 }
 
 div:nth-child(4)>article:nth-of-type(1)
@@ -336,18 +332,22 @@ clear:both;
 
 
 /**************************************************Audio****************************************************************/
-div:nth-child(9)>p
+div:nth-child(8)>p
 {
     font-size:2.3rem;
     margin-top:0;
     padding-top: 4.082%;
+    margin-bottom:0;
 }
 
 
 
-div:nth-child(9) p:nth-of-type(2)
+div:nth-child(8) p:nth-of-type(2)
 {
     font-size: 1.5rem;
+    padding-bottom:1.6%;
+    padding-top:2.018%;
+    margin-top:0;
 }
 #audioGrid
 {
@@ -363,55 +363,74 @@ div:nth-child(9) p:nth-of-type(2)
 #Alpha
 {
     grid-area: Zero;
+    padding-left: 10%;
 }
 #Week1
 {
     grid-area:One;
+    padding-left: 10%;
 }
 #Week2
 {
     grid-area:Two;
+    padding-left: 10%;
 }
 #Week3
 {
     grid-area:Three;
+    padding-left: 10%;
 }
 #Week4
 {
     grid-area: Four;
+    padding-left: 10%;
+
+}
+#Week5
+{
+    grid-area: Five;
+    padding-left: 10%;   padding-left: 10%;
 }
 
 #header0
 {
    grid-area: ZeroH;
+    font-size: 1.3rem;
 }
 #header1
 {
     grid-area: OneH;
+    font-size: 1.3rem;
 }
 #header2
 {
     grid-area: TwoH;
+    font-size: 1.3rem;
 }
 #header3
 {
     grid-area: ThreeH;
+    font-size: 1.3rem;
 }
 #header4
 {
     grid-area: FourH;
+    font-size: 1.3rem;
 }
 #header5
 {
     grid-area: FiveH;
+    font-size: 1.3rem;
 }
 #header6
 {
     grid-area: SixH;
+    font-size: 1.3rem;
 }
 #header7
 {
     grid-area: SevenH;
+    font-size: 1.3rem;
 }
 
 
@@ -439,7 +458,7 @@ div:nth-child(8) p
 
 
 
-div:nth-child(10)>p
+div:nth-child(9)>p
 {
     font-size:2.3rem;
     margin-top:0;
