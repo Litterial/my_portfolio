@@ -80,6 +80,8 @@ background-color: black;
     border-radius:50%;
     height:8%;
     width:4%;
+    background:url('resizearrow.png')no-repeat;
+    border:none;
 }
 /**********************************************Other half of main page*************************************************/
 #myName
