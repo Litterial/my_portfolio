@@ -8,27 +8,27 @@ body,html
 
 div*
 {
+    font-family:"KacstDigital";
+
     margin:0;
 }
 
-*{
-    font-family: 'Arial', 'Helvetica', sans-serif;
-}
 /***************************************************Search Bar*********************************************************/
 #mainPage  /*background*/
 {
 
-    background: url(beautiful-blur-bright-326055.jpg)no-repeat;
+    background: url(155022230133763752.png)no-repeat;
 }
 
 .container {                     /*grid for search*/
     position: relative;
-    left: 15%;
+    left: 27%;
     grid-template-rows: repeat(10, auto);
     text-align: center;
-    width: 70%;
-    background-color: #2fe4ff;
+    width: 45%;
+    background-color: #e2e2e2;
     padding:1%;
+
 }
 
 #aboutLink
@@ -60,15 +60,17 @@ a          /*Margin for links*/
 {
     display:inline;
     margin: 0 2%;
-    color: black;
+    /*color: black;*/
     text-decoration-line: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color:black;
 }
 
 a:hover
 {
 background-color: black;
-    color:white;
+   /* color:white;*/
+    color:#e2e2e2;
 }
 
 
@@ -89,7 +91,9 @@ background-color: black;
 {
     font-size: 5rem;
     margin-bottom: 0;
-
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: #e2e2e2;
 }
 footer:nth-of-type(2)
 {
@@ -115,6 +119,7 @@ div:nth-of-type(1)>footer:nth-of-type(3)>p
 {
     font-size: 2.3rem;
     text-align: center;
+    color: #eff3fa;
 }
 
 #Docx,#PDF
@@ -123,13 +128,28 @@ div:nth-of-type(1)>footer:nth-of-type(3)>p
     height: 20%;
     margin:1% 0;
     font-size:2rem;
-    background: rgba(225,225,225,.1);
+    background: rgba(225,225,225,.0);
+    color: #e2e2e2;
+    font-weight: bold;
+    border: 5px solid #e2e2e2;
 }
 
+#Docx:hover,#PDF:hover
+{
+    background: #e2e2e2;
+    color: #87cefa;
+    text-decoration-line: underline ;
+}
 /*****************************************Background for the Sections***************************************************/
 
 .light{
+    /*
     background-color: #adadad;
+    */
+    /*
+    background-color: white;
+    */
+    background-color: #e2e2e2;
 }
 
 .dark{
@@ -140,7 +160,7 @@ div:nth-of-type(1)>footer:nth-of-type(3)>p
 .layoutAbout
 {
     display:grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
 
 }
 
@@ -158,8 +178,8 @@ div:nth-child(4)>article:nth-of-type(1)
 
     grid-column:2;
     grid-row:1/5;
-    font-size: 1.5rem;
-    margin:6% 10% 0 10%;
+    font-size: 1.3rem;
+    margin:6% 10% 0 0;
     text-align:left;
     border-left:5px solid black;
     padding-left:3%;
@@ -169,8 +189,8 @@ div:nth-child(4)>article:nth-of-type(2)
 
     grid-column:2;
     grid-row:6/10;
-    font-size: 1.5rem;
-    margin:0 10% 0 10%;
+    font-size: 1.3rem;
+    margin:6% 10% 0 10%;
     text-align:left;
     border-left:5px solid black;
     padding-left:3%;
@@ -187,9 +207,12 @@ div:nth-child(5)>p
 div:nth-child(5)>span
 {
     margin:0 1%;
-    font-size: 1.5rem;
-    border:1px solid black;
+    font-size: 1.3rem;
+   /* border:1px solid black;*/
+    /*
     background:gray;
+    */
+    background-color: #e2e2e2;
     padding:0.5%;
 }
 /****************************************************Projects**********************************************************/
@@ -232,7 +255,7 @@ margin:0 10%
     grid-row:5;
     margin: 0 10%;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-left:6%;
 }
 #p2text
@@ -241,7 +264,7 @@ margin:0 10%
     grid-row:5;
     margin: 0 10%;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-left:6%;
 }
 #p3text
@@ -250,31 +273,47 @@ margin:0 10%
     grid-row:5;
     margin:0 10%;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 /************************************************Education**************************************************************/
 
-nav:nth-child(7)>article
+
+div:nth-child(7)
+{
+    text-align: center;
+}
+
+div:nth-child(7)>p  /*Education*/
+{
+    position:relative;
+    font-size:2.3rem;
+    margin-top:0;
+    padding-top: 4.082%;
+    left:2%;
+    grid-column:1;
+    grid-row:1/10;
+}
+/*nav:nth-child(7)>article
 {
     text-align: left;
-}
-nav:nth-child(7) p {
+}*/
+/*nav:nth-child(7) p {
     position: relative;
     left: 2%;
     grid-column: 1;
     grid-row: 1/5;
     font-size: 2.3rem;
-}
-#code {
+}*/
+#code
+{
     grid-column: 2;
     grid-row: 1/5;
-    font-size: 1.5rem;
-    margin: 6% 10% 0 10%;
+    font-size: 1.3rem;
+    margin: 6% 10% 0 0%;
     text-align: left;
     border-left:5px solid black;
     padding-left: 3%;
-
 }
 
 .yearsAttended
@@ -282,28 +321,31 @@ nav:nth-child(7) p {
 position:relative;
 float:right;
 }
-nav:nth-child(7)>nav
+/*nav:nth-child(7)>nav
 {
 clear:both;
     text-align: left;
 
-}
-nav:nth-child(6)
+}*/
+/*nav:nth-child(6)
  {
      text-align: left;
- }
+ }*/
+/**************************************************Resume***************************************************************/
+
+
+
 /**************************************************Audio****************************************************************/
+div:nth-child(9)>p
+{
+    font-size:2.3rem;
+    margin-top:0;
+    padding-top: 4.082%;
+}
 
 
 
-div:nth-child(7) p
- {
-     font-size:2.3rem;
-     margin-top:0;
-     padding-top: 4.082%;
- }
-
-div:nth-child(7) p:nth-of-type(2)
+div:nth-child(9) p:nth-of-type(2)
 {
     font-size: 1.5rem;
 }
@@ -395,16 +437,19 @@ div:nth-child(8) p
 
 
 
-div:nth-child(9)>p
-{
-    font-size:2.3rem;
-    margin-top:0;
-    padding-top: 4.082%;
-}
+
 
 div:nth-child(10)>p
 {
     font-size:2.3rem;
     margin-top:0;
     padding-top: 4.082%;
+}
+
+
+
+#fontTest
+{
+    font-family:"KacstDigital";
+    font-size:1.5rem;
 }
