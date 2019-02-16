@@ -30,7 +30,6 @@ div{
 }
 
 .container {                     /*grid for search*/
-    position: relative;
     margin-left:27.5%;
     grid-template-columns: repeat(6, auto);
     text-align: center;
@@ -62,7 +61,6 @@ div{
 }
 a          /*Margin for links*/
 {
-    display:inline;
     margin: 0 2%;
     /*color: black;*/
     text-decoration-line: none;
@@ -91,7 +89,7 @@ background-color: black;
     width:4%;
     background:url('resizearrow.png')no-repeat;
     border:none;
-    scroll-behavior:smooth;
+
 }
 /**********************************************Other half of main page*************************************************/
 #myName
@@ -292,64 +290,44 @@ div:nth-child(7)
 }
 */
 
-div:nth-child(7)>p  /*Education*/
+
+
+
+#educationGrid
+{
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows:1fr;
+    text-align: left;
+    font-size:1.3rem;
+}
+
+article>p  /*Education*/
 {
 
     font-size:2.3rem;
     margin-top:0;
     padding-top: 4.082%;
-    padding-left:2%;
-    text-decoration: underline;
-    /*grid-column:1;
-    grid-row:1/10;*/
-}
-/*nav:nth-child(7)>article
-{
-    text-align: left;
-}*/
-/*nav:nth-child(7) p {
-    position: relative;
-    left: 2%;
+    padding-right: 20%;
     grid-column: 1;
-    grid-row: 1/5;
-    font-size: 2.3rem;
-}*/
-
-
-.yearsAttended
-{
-position:relative;
-float:right;
-right:20%;
+    grid-row: 1/3;
+    text-align:center;
 }
-.collegeAttended
+#in-gridEd
 {
-   /* position:relative;*/
-    float:left;
-    left:30%;
-}
-
-/*.blockStyle
-{
-    display: block;
-    clear:both;
-}*/
-
-#educationGrid
-{
+    grid-column: 2;
+    grid-row:1;
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:repeat(3,1fr);
+    grid-template-rows:repeat(3,auto);
+    grid-template-columns:repeat(2,auto);
+    border-left: 5px solid black;
 
-    text-align: left;
-    font-size:1.3rem;
 }
-
 #codeC
 {
-  grid-column: 1;
+    grid-column: 1;
     grid-row:1;
-    padding-left:40%;
+    padding-left:3%;
 }
 #codeDates
 {
@@ -361,7 +339,7 @@ right:20%;
 {
     grid-column: 1;
     grid-row:2;
-    padding-left:40%;
+    padding-left:3%;
 }
 #uofmDates
 {
@@ -374,7 +352,7 @@ right:20%;
 {
     grid-column: 1;
     grid-row:3;
-    padding-left:40%;
+    padding-left:3%;
 }
 #swDates
 {
@@ -406,7 +384,7 @@ div:nth-child(8) p:nth-of-type(2)
 {
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
 }
 
 #Alpha
