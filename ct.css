@@ -1,0 +1,49 @@
+td
+{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 100px;
+}
+/*Add the necessary code to display a grey border around a game square when the mouse pointer hovers over it (HINT: CSS)
+*/
+td:hover   /*hover function*/
+{
+ border:1px solid grey;
+}
+
+.vertical{
+    border-left:1px solid black;
+    border-right:1px solid black;
+
+}
+
+.horizontal
+{
+border-top:1px solid black;
+border-bottom: 1px solid black;
+}
+
+table{
+    margin:auto;
+}
+h1{
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+
+
+.yellow
+{
+    background-color: yellow;
+}
+
+.gray
+{
+    background-color: gray;
+}
+
+.white
+{
+    background-color: white;
+}

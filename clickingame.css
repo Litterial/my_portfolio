@@ -1,0 +1,145 @@
+
+body   /*body margin*/
+{
+ margin: 2% 5%;
+height:100%;
+}
+h1                  /*game title*/
+{
+    text-align: center;
+
+}
+
+.container      /*set up border*/
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:repeat(2,auto);
+    margin:0 10%;
+    text-align: center;
+    gap:0;
+    grid-gap:0;
+
+}
+
+aside     /*player 1*/
+{
+ grid-column: 1;
+    grid-row: 1;
+    font-size: 50px;
+    padding:0;
+}
+
+section   /*scoreboard*/
+{
+    grid-column:2;
+    grid-row:1;
+    font-size: 50px;
+    border-top: 1px solid black;
+}
+
+nav     /*player2*/
+{
+    grid-column: 3;
+    grid-row:1;
+    font-size: 50px;
+    padding:0;
+}
+
+footer  /*game options*/
+{
+    border:1px solid black;
+    border-top: none;
+    grid-column:1;
+    grid-row:2;
+    font-size:50px;
+}
+
+article   /*background color*/
+{
+    border:1px solid black;
+    border-top: none;
+    grid-column:3;
+    grid-row:2;
+    font-size:50px;
+
+}
+
+article>p
+{
+    grid-column: 1/span 4;
+    grid-row:1;
+    text-align: center;
+    margin: 0;
+}
+
+aside,nav /*borders*/
+{
+border: 1px solid black;
+}
+
+#inputP1,#inputP2   /*button sizes for Player 1 and 2*/
+{
+   height:10%;
+    width:90%;
+    font-size: 90px;
+    border-radius: 3px;
+}
+
+
+
+.red   /*red background*/
+{
+    background-color: red;
+}
+
+.blue  /*blue background*/
+{
+    background-color: blue;
+
+}
+
+.yellow  /*yellow background*/
+{
+    background-color:yellow;
+}
+
+.blackW
+{
+    background-color:black;
+    color:white;
+
+}
+
+.bgcGrid
+{
+    display:grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(3,25%);
+}
+
+
+
+#counter1,#counter2   /*counter text*/
+{
+    font-size: 13rem;
+    margin:15% 0;
+
+}
+
+#redB,#blueB,#yellowB  /*background buttons*/
+{
+   width:30%;
+}
+
+#darkB
+{
+    width:45%;
+}
+
+
+#clicks,#keyboard  /*control buttons*/
+{
+    width:45%;
+
+}
