@@ -206,13 +206,16 @@ div:nth-child(5)>p      /*Skills tittle*/
     padding-top: 4.082%;
 }
 
+
 div:nth-child(5)>span    /*Actual skills*/
 {
+    display:inline-block;
     margin:0 1%;
     font-size: 1.3rem;
     background-color: #e2e2e2;
     padding:0.5%;
 }
+
 
 /****************************************************Projects**********************************************************/
 div:nth-child(6) p    /*Project name*/
@@ -229,8 +232,8 @@ div:nth-child(6) p    /*Project name*/
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
     margin:0 15%;
-    grid-row-gap: 50px;
-    row-gap: 50px;
+    grid-row-gap: 4vh;
+    row-gap: 4vh;
 
 }
 
