@@ -256,6 +256,7 @@ div:nth-child(6) p    /*Project name*/
     font-size: 1.3rem;
     padding-left: 9%;
     background: white;
+    padding-right:3%;
 }
 
 #p2text    /*info of project 2*/
@@ -266,6 +267,7 @@ div:nth-child(6) p    /*Project name*/
     font-size: 1.3rem;
     padding-left: 9%;
     background:white;
+    padding-right:3%;
 }
 
 #p1text>nav:nth-of-type(1),#p2text>nav:nth-of-type(1)
