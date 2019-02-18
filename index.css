@@ -213,6 +213,7 @@ div:nth-child(5)>span    /*Actual skills*/
     background-color: #e2e2e2;
     padding:0.5%;
 }
+
 /****************************************************Projects**********************************************************/
 div:nth-child(6) p    /*Project name*/
 {
