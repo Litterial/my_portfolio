@@ -9,10 +9,6 @@ h1              /*game title*/
     text-align: center;
 }
 
-h2
-{
-    text-align: center;
-}
 .container      /*set up border*/
 {
     display:grid;
