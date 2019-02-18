@@ -1,4 +1,4 @@
-html
+html   /*controls scroll*/
 {
     scroll-behavior:smooth;
 }
@@ -10,17 +10,13 @@ html,body
     margin:0;
     background-color:#87cefa ;
 }
-div
+div     /*all divs*/
 {
     text-align: center;
     padding-bottom: 5%;
     font-family: sans-serif;
 }
 
-@font-face {
-    font-family: 'MDGroteskRegular';
-    src:url('MDGroteskRegular.woff');
-}
 
 /***************************************************Search Bar*********************************************************/
 #mainPage  /*background*/
@@ -78,7 +74,7 @@ a
     color:black;
 }
 
-
+/*settings when you hover a link*/
 #aboutLink:hover,#projectsLink:hover,#educationLink:hover,#skillsLink:hover,#codecrewLink:hover,#contactLink:hover
 {
     background-color: black;
@@ -110,23 +106,23 @@ a
     font-weight: bold;
     color: #e2e2e2;
 }
-footer:nth-of-type(2)
+footer:nth-of-type(2)   /*delays my name*/
 {
     animation-delay: 1s;
 }
 
-footer:nth-of-type(3)
+footer:nth-of-type(3)    /*delays sub-header for site*/
 {
     animation-delay:1.25s;
 }
 
-footer:nth-of-type(4)
+footer:nth-of-type(4)   /*delays PDF*/
 {
     animation-delay:1.5s;
 }
 
 
-div:nth-of-type(1)>footer:nth-of-type(3)>p
+div:nth-of-type(1)>footer:nth-of-type(3)>p   /*sub header*/
 {
     font-size: 2.3rem;
     text-align: center;
@@ -170,7 +166,7 @@ div:nth-of-type(1)>footer:nth-of-type(3)>p
 
 }
 
-div:nth-child(4)>p
+div:nth-child(4)>p   /*About me title*/
 {
 
     padding-left:2%;
@@ -179,7 +175,7 @@ div:nth-child(4)>p
     font-size: 2.3rem;
 }
 
-div:nth-child(4)>article:nth-of-type(1)
+div:nth-child(4)>article:nth-of-type(1)  /*About me paragraph*/
 {
 
     grid-column:2;
@@ -190,7 +186,7 @@ div:nth-child(4)>article:nth-of-type(1)
     border-left:5px solid black;
     padding-left:3%;
 }
-div:nth-child(4)>article:nth-of-type(2)
+div:nth-child(4)>article:nth-of-type(2)    /*extra optional space in case I want to add more info*/
 {
 
     grid-column:2;
@@ -203,14 +199,14 @@ div:nth-child(4)>article:nth-of-type(2)
     padding-top:1%;
 }
 /****************************************************Skills************************************************************/
-div:nth-child(5)>p
+div:nth-child(5)>p      /*Skills tittle*/
 {
     font-size: 2.3rem;
     margin-top:0;
     padding-top: 4.082%;
 }
 
-div:nth-child(5)>span
+div:nth-child(5)>span    /*Actual skills*/
 {
     margin:0 1%;
     font-size: 1.3rem;
@@ -218,7 +214,7 @@ div:nth-child(5)>span
     padding:0.5%;
 }
 /****************************************************Projects**********************************************************/
-div:nth-child(6) p
+div:nth-child(6) p    /*Project name*/
 {
     font-size:2.3rem;
     margin-top:0;
@@ -238,80 +234,70 @@ div:nth-child(6) p
 }
 
 
-#project1
+#project1    /*holds project 1 image*/
 {
-
     grid-column: 1;
-    grid-row:1;
-    background:white;
-
-
-
+    grid-row: 1;
+    background: white;
 
 }
-#project2
+#project2     /*holds project 2 image*/
 {
-  ;
     grid-column: 1;
     grid-row:2;
     background:white;
-
-
 }
 
-#p1text
+#p1text    /*info of project 1*/
 {
-
     padding-top:9%;
     grid-column: 2;
     grid-row:1;
     font-size: 1.3rem;
     padding-left: 9%;
     background: white;
-
 }
 
-#p1text>nav:nth-of-type(2),#p2text>nav:nth-of-type(2)
+#p2text    /*info of project 2*/
 {
-    text-align: left;
-
-}
-
-#p2text>a
-
-{
-  position:relative;
-    top:48px;
-}
-#p1text>a,#p2text>a
-{
-    color: blue;
-    text-decoration-line: underline;
-}
-
-#p1text>nav:nth-of-type(1),#p2text>nav:nth-of-type(1)
-{
-    padding-bottom: 5%;
-}
-#p2text
-{
-
     padding-top: 9%;
     grid-column: 2;
     grid-row:2;
     font-size: 1.3rem;
     padding-left: 9%;
     background:white;
+}
+
+#p1text>nav:nth-of-type(1),#p2text>nav:nth-of-type(1)
+{
+    padding-bottom: 5%;
+}
+
+#p1text>nav:nth-of-type(2),#p2text>nav:nth-of-type(2)   /*align the body of the text to the left*/
+{
+    text-align: left;
 
 }
 
 
+#p1text>a,#p2text>a     /*click me*/
+{
+    color: blue;
+    text-decoration-line: underline;
+}
+
+#p2text>a     /*move click me to the bottom*/
+
+ {
+     position:relative;
+     top:48px;
+ }
+
+
+
+
+
 /************************************************Education**************************************************************/
-
-
-
-
-
 .educationGrid
 {
     display:grid;
@@ -321,7 +307,7 @@ div:nth-child(6) p
     font-size:1.3rem;
 }
 
-article>p  /*Education*/
+article>p  /*Education title*/
 {
 
     font-size:2.3rem;
@@ -332,7 +318,7 @@ article>p  /*Education*/
     grid-row: 1/3;
     text-align:center;
 }
-#in-gridEd
+#in-gridEd /*grid for Education history*/
 {
     grid-column: 2;
     grid-row:1;
@@ -387,7 +373,7 @@ article>p  /*Education*/
 
 
 /**************************************************Audio****************************************************************/
-div:nth-child(8) p:nth-of-type(1)
+div:nth-child(8) p:nth-of-type(1)  /*Audio header*/
 {
     font-size:2.3rem;
     margin-top:0;
@@ -397,7 +383,7 @@ div:nth-child(8) p:nth-of-type(1)
 
 
 
-div:nth-child(8) p:nth-of-type(2)
+div:nth-child(8) p:nth-of-type(2)   /*audio sub-header*/
 {
     font-size: 1.5rem;
     padding-bottom:1.6%;
@@ -411,47 +397,6 @@ div:nth-child(8) p:nth-of-type(2)
     grid-template-columns:repeat(4,1fr);
     grid-template-rows: repeat(4,auto);
     padding:2%;
-}
-
-#Alpha
-{
-    grid-column:1;
-    grid-row:2;
-    padding: 0 5%;
-}
-#Week1
-{
-    grid-column:2;
-    grid-row:2;
-    padding: 0 5%;
-}
-#Week2
-{
-    grid-column:3;
-    grid-row:2;
-    padding: 0 5%;
-}
-#Week3
-{
-    grid-column:4;
-    grid-row:2;
-    padding: 0 5%;
-
-}
-#Week4
-{
-    grid-column:1;
-    grid-row:4;
-    padding: 0 5%;
-
-
-}
-#Week5
-{
-    grid-column:2;
-    grid-row:4;
-    padding: 0 5%;
-
 }
 
 #header0
@@ -502,18 +447,63 @@ div:nth-child(8) p:nth-of-type(2)
     grid-row:3;
     font-size: 1.3rem;
 }
+/*audio controls layout*/
 
-.spaceBottom
+#Alpha
+{
+    grid-column:1;
+    grid-row:2;
+    padding: 0 5%;
+}
+#Week1
+{
+    grid-column:2;
+    grid-row:2;
+    padding: 0 5%;
+}
+#Week2
+{
+    grid-column:3;
+    grid-row:2;
+    padding: 0 5%;
+}
+#Week3
+{
+    grid-column:4;
+    grid-row:2;
+    padding: 0 5%;
+
+}
+#Week4
+{
+    grid-column:1;
+    grid-row:4;
+    padding: 0 5%;
+
+}
+#Week5
+{
+    grid-column:2;
+    grid-row:4;
+    padding: 0 5%;
+
+}
+#Week6
+{
+    grid-column:3;
+    grid-row:4;
+    padding: 0 5%;
+
+}
+
+.spaceBottom  /*space between audio controls and text in rows*/
 {
     margin-bottom:4%;
 }
-/***********************************************************Audio******************************************************/
+/***********************************************************Contact******************************************************/
 
 
-
-
-
-div:nth-child(9)>p
+div:nth-child(9)>p    /*Contact*/
 {
     font-size:2.3rem;
     margin-top:0;
