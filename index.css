@@ -294,9 +294,9 @@ div:nth-child(6) p    /*Project name*/
 
 #p2text>a     /*move click me to the bottom*/
 
- {
-     position:relative;
-     top:48px;
+{
+    display:block;
+    margin-top:7.1vh;
  }
 
 
