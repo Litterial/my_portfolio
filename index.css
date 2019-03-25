@@ -25,11 +25,17 @@ div     /*all divs*/
 
     text-align: center;
 }
+
+.nav{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 /*grid for search*/
 .container {
-    display: grid;
-    margin-left: 27.5%;
-    grid-template-columns: repeat(6, auto);
+    /*display: grid;*/
+    /*margin-left: 27.5%;*/
+    /*grid-template-columns: repeat(6, auto);*/
     background-color: #e2e2e2;
     width: 45%;
     padding:1% .1%;
