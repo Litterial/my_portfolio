@@ -1,12 +1,13 @@
 html   /*controls scroll*/
 {
     scroll-behavior:smooth;
+    height: 100vh;
+    width:100vw;
 }
 
 html,body
 {
-    height: 100%;
-    width:100%;
+
     margin:0;
     background-color:#87cefa ;
 }
@@ -33,44 +34,44 @@ div     /*all divs*/
 }
 /*grid for search*/
 .container {
-    /*display: grid;*/
-    /*margin-left: 27.5%;*/
-    /*grid-template-columns: repeat(6, auto);*/
+
     background-color: #e2e2e2;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px;
     width: 45%;
     padding:1% .1%;
 }
 
-#aboutLink
-{
-    grid-column: 1;
-    grid-row: 1;
-}
-#skillsLink
-{
-    grid-column: 2;
-    grid-row: 1;
-}
-#projectsLink
-{
-    grid-column: 3;
-    grid-row: 1;
-}
-#educationLink
-{
-    grid-column: 4;
-    grid-row:1;
-}
-#codecrewLink
-{
-    grid-column:5;
-    grid-row: 1;
-}
-#contactLink
-{
-    grid-column:6;
-    grid-row: 1;
-}
+/*#aboutLink*/
+/*{*/
+/*    grid-column: 1;*/
+/*    grid-row: 1;*/
+/*}*/
+/*#skillsLink*/
+/*{*/
+/*    grid-column: 2;*/
+/*    grid-row: 1;*/
+/*}*/
+/*#projectsLink*/
+/*{*/
+/*    grid-column: 3;*/
+/*    grid-row: 1;*/
+/*}*/
+/*#educationLink*/
+/*{*/
+/*    grid-column: 4;*/
+/*    grid-row:1;*/
+/*}*/
+/*#codecrewLink*/
+/*{*/
+/*    grid-column:5;*/
+/*    grid-row: 1;*/
+/*}*/
+/*#contactLink*/
+/*{*/
+/*    grid-column:6;*/
+/*    grid-row: 1;*/
+/*}*/
 /*Margin for links*/
 a
 {
@@ -81,7 +82,16 @@ a
 }
 
 /*settings when you hover a link*/
-#aboutLink:hover,#projectsLink:hover,#educationLink:hover,#skillsLink:hover,#codecrewLink:hover,#contactLink:hover
+#aboutLink:hover
+{   grid-column: 1;
+    grid-row:1;
+    background-color: black;
+    color:#e2e2e2;
+    padding:0;
+}
+
+
+#projectsLink:hover,#educationLink:hover,#skillsLink:hover,#codecrewLink:hover,#contactLink:hover
 {
     background-color: black;
     color:#e2e2e2;
@@ -93,7 +103,7 @@ a
 #scrollUp
 {
     position:fixed;
-    display:block;
+    display:none;
     right:0;
     bottom:0;
     height:8%;
@@ -103,6 +113,8 @@ a
 
 
 }
+
+
 /**********************************************Other half of main page*************************************************/
 #myName
 {
@@ -280,14 +292,14 @@ div:nth-child(6) p    /*Project name*/
     padding-right:3%;
 }
 
-#p1text>nav:nth-of-type(1),#p2text>nav:nth-of-type(1)
-{
-    padding-bottom: 5%;
-}
+/*#p1text>nav:nth-of-type(1),#p2text>nav:nth-of-type(1)*/
+/*{*/
+/*    padding-bottom: 5%;*/
+/*}*/
 
-#p1text>nav:nth-of-type(2),#p2text>nav:nth-of-type(2)   /*align the body of the text to the left*/
+#p1text>nav:nth-of-type(2),#p2text>nav:nth-of-type(2)  /* align the body of the text to the left*/
 {
-    text-align: left;
+/  text-align: left;
 
 }
 
