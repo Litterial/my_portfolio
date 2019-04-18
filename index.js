@@ -11,4 +11,3 @@ $(document).scroll(function()
         $('#scrollUp').removeClass('fadeInRight animated').addClass('fadeOutRight animated');
     }
 });
-
