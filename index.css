@@ -9,7 +9,7 @@ html,body
 {
 
     margin:0;
-    background-color:#87cefa ;
+    /*background-color:#87cefa ;*/
 }
 div     /*all divs*/
 {
@@ -23,7 +23,7 @@ div     /*all divs*/
 #mainPage  /*background*/
 {
     background: url(155022230133763752.png)no-repeat;
-
+    width:100vw;
     text-align: center;
 }
 
@@ -162,7 +162,7 @@ div:nth-of-type(1)>footer:nth-of-type(3)>p   /*sub header*/
 #PDF:hover
 {
     background: #e2e2e2;
-    color: #87cefa;
+    color: #7CBEE7;
     text-decoration-line: underline ;
 }
 /*****************************************Background for the Sections***************************************************/
@@ -173,7 +173,7 @@ div:nth-of-type(1)>footer:nth-of-type(3)>p   /*sub header*/
 }
 
 .dark{
-    background-color: #87cefa;
+    background-color: #7CBEE7;
 }
 /**************************************************About Me************************************************************/
 
@@ -248,7 +248,7 @@ div:nth-child(6) p    /*Project name*/
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
     margin:0 15%;
     grid-row-gap: 4vh;
     row-gap: 4vh;
@@ -270,6 +270,12 @@ div:nth-child(6) p    /*Project name*/
     background:white;
 }
 
+#project3
+{
+    grid-column: 1;
+    grid-row:3;
+    background:white;
+}
 #p1text    /*info of project 1*/
 {
     padding-top:9%;
@@ -292,19 +298,31 @@ div:nth-child(6) p    /*Project name*/
     padding-right:3%;
 }
 
+#p3text    /*info of project 3*/
+{
+    padding-top: 9%;
+    grid-column: 2;
+    grid-row:3;
+    font-size: 1.3rem;
+    padding-left: 9%;
+    background:white;
+    padding-right:3%;
+}
+
+
 /*#p1text>nav:nth-of-type(1),#p2text>nav:nth-of-type(1)*/
 /*{*/
 /*    padding-bottom: 5%;*/
 /*}*/
 
-#p1text>nav:nth-of-type(2),#p2text>nav:nth-of-type(2)  /* align the body of the text to the left*/
+#p1text>nav:nth-of-type(2),#p2text>nav:nth-of-type(2),#p3text>nav:nth-of-type(2)   /* align the body of the text to the left*/
 {
-/  text-align: left;
+  text-align: left;
 
 }
 
 
-#p1text>a,#p2text>a     /*click me*/
+#p1text>a,#p2text>a,#p3text>a   /*click me*/
 {
     color: blue;
     text-decoration-line: underline;
@@ -415,7 +433,7 @@ div:nth-child(8) p:nth-of-type(2)   /*audio sub-header*/
     margin-top:0;
     margin-bottom: 0;
 }
-#audioGrid
+.audioGrid
 {
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -423,49 +441,49 @@ div:nth-child(8) p:nth-of-type(2)   /*audio sub-header*/
     padding:2%;
 }
 
-#header0
+.header0
 {
     grid-column:1;
     grid-row:1;
     font-size: 1.3rem;
 }
-#header1
+.header1
 {
     grid-column:2;
     grid-row:1;
     font-size: 1.3rem;
 }
-#header2
+.header2
 {
     grid-column:3;
     grid-row:1;
     font-size: 1.3rem;
 }
-#header3
+.header3
 {
     grid-column:4;
     grid-row:1;
     font-size: 1.3rem;
 }
-#header4
+.header4
 {
     grid-column:1;
     grid-row:3;
     font-size: 1.3rem;
 }
-#header5
+.header5
 {
     grid-column:2;
     grid-row:3;
     font-size: 1.3rem;
 }
-#header6
+.header6
 {
     grid-column:3;
     grid-row:3;
     font-size: 1.3rem;
 }
-#header7
+.header7
 {
     grid-column:4;
     grid-row:3;
@@ -473,56 +491,108 @@ div:nth-child(8) p:nth-of-type(2)   /*audio sub-header*/
 }
 /*audio controls layout*/
 
-#Alpha
+.Alpha
 {
     grid-column:1;
     grid-row:2;
     padding: 0 5%;
 }
-#Week1
+.Week1
 {
     grid-column:2;
     grid-row:2;
     padding: 0 5%;
 }
-#Week2
+.Week2
 {
     grid-column:3;
     grid-row:2;
     padding: 0 5%;
 }
-#Week3
+.Week3
 {
     grid-column:4;
     grid-row:2;
     padding: 0 5%;
 
 }
-#Week4
+.Week4
 {
     grid-column:1;
     grid-row:4;
     padding: 0 5%;
 
 }
-#Week5
+.Week5
 {
     grid-column:2;
     grid-row:4;
     padding: 0 5%;
 
 }
-#Week6
+.Week6
 {
     grid-column:3;
     grid-row:4;
     padding: 0 5%;
 
 }
+.Week7
+{
+    grid-column:4;
+    grid-row:4;
+    padding: 0 5%;
 
+}
+
+.audioWeekGrid
+{
+    display:grid;
+    grid-template-areas: "week sign";
+}
+
+.audioWeek
+{
+grid-area: week;
+}
+
+.accordion button[aria-expanded="true"]::after{
+    grid-area:sign;
+    content:" \2796" ;
+    padding-left: 54%;
+}
+.accordion button[aria-expanded="true"][aria-controls="collapseTwo"]::after{
+    grid-area:sign;
+    content:" \2796" ;
+    padding-left: 54.3%;
+}
+.accordion button[aria-expanded="false"][aria-controls="collapseTwo"]::after{
+    grid-area:sign;
+    content:" \2795" ;
+    padding-left: 54.3%;
+}
+.accordion button[aria-expanded="false"]::after{
+    grid-area:sign;
+    content:" \2795" ;
+    padding-left: 54%;
+}
 .spaceBottom  /*space between audio controls and text in rows*/
 {
     margin-bottom:4%;
+}
+
+.audio
+{
+    width:100vw;
+    border:none;
+    background:none;
+}
+
+
+
+.audio:focus
+{
+    outline:none;
 }
 /***********************************************************Contact******************************************************/
 

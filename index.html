@@ -3,12 +3,17 @@
 <head>
     <meta name='viewport' content='width=device-width, initial-scale=1.0' charset="UTF-8">
     <title>Title</title>
+
+
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 </head>
 <body>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="animate.css">
+
 <div id="mainPage">
     <footer class="slideInDown animated nav">
         <section class="container">
@@ -29,17 +34,13 @@
     </footer>
 
     <footer class="zoomIn animated">
-        <a href="resume%20V2.pdf" download><button id="PDF">Downloadable Résumé (PDF)</button></a>
+        <a href="resume.pdf" download><button id="PDF">Downloadable Résumé (PDF)</button></a>
     </footer>
 </div>
 
 <div id='AboutMe' class ='light layoutAbout'>
     <p>About me</p>
-    <article>Hello, My name is Juwan, student currently attending the CodeCrew Coding School, a six month program that
-        will prepare me for a career as a full-stack developer. As job openings in STEM have trended upward, this is an
-        invaluble opportunity to jump on. On top of that with a degree in mathematics and nearly a degree in Spanish, I
-        will not only have an upper-hand in the job market, but the critical thinking and creativity skills gained from
-        math and Spanish, respectively.
+    <article>I'm a full-stack developer currently finishing my training through the Code Crew coding boot camp. Our tech-driven world ushers new trends and discoveries that we as developers must stay on top of. It is within this environement, I movitvate and challenge myself to relentless pursuit perfection and knowledge of this areas. In addition, I want my involvment in any project to akin to the level of performance any audience expects from their favorite artist, and to impress and motivate other developers.
     </article>
 </div>
 <div id="Skills" class="dark">
@@ -50,9 +51,13 @@
     <p>Projects</p>
     <nav class = 'projectGrid'>
         <nav id='project1'><img src="15504494465192318.png" alt="An image of the Clicking game"></nav>
-        <nav id ='p1text'><nav>Clicking game</nav><nav>This project was a class assignment to create a game that keeps track of two players' scores. Each player has to click their assigned button to score. This game includes an option to switch to a keyboard control scheme.</nav><a href="./clickinggame/clickingame.html" target= ' _blank'>Click here</a></nav>
+        <nav id ='p1text'><nav>Clicking game</nav><nav>This project is  a game that keeps track of two players' scores. Each player has to click their assigned button to score. This game includes an option to switch to a keyboard control scheme.</nav><a href="./clickinggame/clickingame.html" target= ' _blank'>Click here</a></nav>
      <nav id='project2'><img src="tictactoe.png" alt="An image of a Tic-Tac-Toe Board"></nav>
-        <nav id='p2text'><nav>Tic-Tac-Toe game</nav><nav>This project was a class assignment to create a Tic-Tac-Toe game. The program must be able to determine whether Player 1 or Player 2 won.</nav><a href="./tictactoe/ct.html" target="_blank">Click Here</a></nav>
+        <nav id='p2text'><nav>Tic-Tac-Toe game</nav><nav>This project is a Tic-Tac-Toe game. The program must be able to determine whether Player 1 or Player 2 won.</nav><a href="./tictactoe/ct.html" target="_blank">Click Here</a></nav>
+
+        <nav id='project3'><img src="Wiki.png" alt="A thumbnail of the Wikipedia Project"></nav>
+        <nav id='p3text'><nav>Mock Wikipedia App</nav><nav> This project a Wikipedia-Lite that allows users to create read, edit, delete articles as an author.</nav><nav><b>Languages and Frameworks</b></nav><nav>Python,Django,Bootstrap,SQL</nav><a href="http://app1.juwanmoore.com" target="_blank">Click Here</a></nav>
+    </nav>
     </nav>
 </div>
 <div id="Education" class="dark">
@@ -91,44 +96,128 @@
 <div id='Codecrew' class ='light'> <p>CodeCrew Audio Logs</p>
     <p>Throughout my journey at the CodeCrew Coding School, I've recorded weekly audio logs to share my thoughts and opinions about the course.</p>
 
-    <div id="audioGrid">
-        <section id="header0">Pre-Week Log</section>
-        <section id="header1">Week 1 Log</section>
-        <section id="header2">Week 2 Log</section>
-        <section id="header3">Week 3 Log</section>
-        <audio id='Alpha' class="spaceBottom" preload="none" controls="">
-            <source src="Coding%20Crew%20Intro%20Vlog.mp3">
-        </audio>
-        <audio id='Week1' class="spaceBottom" preload="none" controls="">
-            <source src="Week1.mp3">
+    <div class="accordion" id="accordionExample">
+        <section class="card">
+            <div class="card-header light" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="audio " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Pre-Week - Week 7
 
-        </audio>
-        <audio id='Week2' class="spaceBottom" preload="none" controls="">
-            <source src="Week2.mp3">
-        </audio>
-        <audio id='Week3' class="spaceBottom" preload="none" controls="">
-            <source src="Week3.mp3">
-        </audio>
-        <section id="header4">Week 4 Log</section>
-        <section id="header5">Week 5 Log</section>
-        <section id="header6">Week 6 Log</section>
-        <section id="header7">Week 7 Log</section>
-        <audio id='Week4' class="spaceBottom" preload="none" controls>
-            <source src="Week4.mp3">
-        </audio>
-        <audio id="Week5" class="spaceBottom" preload="none" controls>
-            <source src="Week5.mp3">
-        </audio>
-        <audio id="Week6" class="spaceBottom" preload="none" controls>
-            <source src="Week6.mp3">
-        </audio>
+                    </button>
+                </h5>
+            </div>
 
+            <section id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body audioGrid light">
+                    <section class="header0">Pre-Week Log</section>
+                    <section class="header1">Week 1 Log</section>
+                    <section class="header2">Week 2 Log</section>
+                    <section class="header3">Week 3 Log</section>
+                    <audio class='Alpha spaceBottom' preload="none" controls="">
+                        <source src="Coding%20Crew%20Intro%20Vlog.mp3">
+                    </audio>
+                    <audio class='Week1 spaceBottom' preload="none" controls="">
+                        <source src="Week1.mp3">
+
+                    </audio>
+                    <audio class='Week2spaceBottom' preload="none" controls="">
+                        <source src="Week2.mp3">
+                    </audio>
+                    <audio class='Week3 spaceBottom' preload="none" controls="">
+                        <source src="Week3.mp3">
+                    </audio>
+                    <section class="header4">Week 4 Log</section>
+                    <section class="header5">Week 5 Log</section>
+                    <section class="header6">Week 6 Log</section>
+                    <section class="header7">Week 7 Log</section>
+                    <audio class='Week4 spaceBottom' preload="none" controls>
+                        <source src="Week4.mp3">
+                    </audio>
+                    <audio class='Week5 spaceBottom' preload="none" controls>
+                        <source src="Week5.mp3">
+                    </audio>
+                    <audio class="Week6 spaceBottom" preload="none" controls>
+                        <source src="Week6.mp3">
+                    </audio>
+                    <audio class="Week7 spaceBottom" preload="none" controls>
+                        <source src="Week7.mp3">
+                    </audio>
+                </div>
+            </section>
+        </section>
+        <section class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="audio collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Week 8 - Week 15
+                    </button>
+                </h5>
+            </div>
+            <section id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body audioGrid light">
+                        <section class="header0">Week 8 Log</section>
+                        <section class="header1">Week 9 Log</section>
+                        <section class="header2">Week 10 Log</section>
+                        <section class="header3">Week 11 Log</section>
+                        <audio class='Alpha spaceBottom' preload="none" controls="">
+                            <source src="Week8.mp3">
+                        </audio>
+                        <audio class='Week1 spaceBottom' preload="none" controls="">
+                            <source src="Week9.mp3">
+
+                        </audio>
+                        <audio class='Week2spaceBottom' preload="none" controls="">
+                            <source src="Week10.mp3">
+                        </audio>
+                        <audio class='Week3 spaceBottom' preload="none" controls="">
+                            <source src="Week11.mp3">
+                        </audio>
+                        <section class="header4">Week 12 Log</section>
+                        <section class="header5">Week 13 Log</section>
+                        <section class="header6">Week 14 Log</section>
+                        <section class="header7">Week 15 Log</section>
+                        <audio class='Week4 spaceBottom' preload="none" controls>
+                            <source src="Week12.mp3">
+                        </audio>
+                        <audio class='Week5 spaceBottom' preload="none" controls>
+                            <source src="Week13.mp3">
+                        </audio>
+                        <audio class="Week6 spaceBottom" preload="none" controls>
+                            <source src="Week14.mp3">
+                        </audio>
+                    <audio class="Week7 spaceBottom" preload="none" controls>
+                        <source src="Week15.mp3">
+                    </audio>
+                </div>
+            </section>
+        </section>
+        <section class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="audio collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Week 16 - Week 23
+                    </button>
+                </h5>
+            </div>
+            <section id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body audioGrid light">
+                    <section class="header0">Week 16 Log</section>
+                    <section class="header1">Week 17 Log</section>
+                    <section class="header2">Week 18 Log</section>
+                    <section class="header3">Week 19 Log</section>
+                    <audio class='Alpha spaceBottom' preload="none" controls="">
+                        <source src="Week16.mp3">
+                    </audio>
+
+                </div>
+            </section>
+        </section>
     </div>
 
 </div>
 
 <div id='Contact' class ='dark'><p>Contact Me</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScEZp6eFHMmMl8HhrOMQwlX_Njt43PhbeIZ5qVgbeLd05Qb9Q/viewform?embedded=true" width="640" height="790" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTIT68oVBhHE6Iqr2RAQX8DV7Uwo6EjMud1h7vPG1St9lQBw/viewform?embedded=true" width="640" height="790" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </div>
 
 
