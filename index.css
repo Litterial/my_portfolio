@@ -23,7 +23,7 @@ div     /*all divs*/
 #mainPage  /*background*/
 {
     background: url(155022230133763752.png)no-repeat;
-    width:100vw;
+    background-size:100vw;
     text-align: center;
 }
 
