@@ -123,6 +123,7 @@ a
     font-family: 'Arial', 'Helvetica', sans-serif;
     font-weight: bold;
     color: #e2e2e2;
+    padding-top:2%;
 }
 footer:nth-of-type(2)   /*delays my name*/
 {
@@ -177,6 +178,10 @@ div:nth-of-type(1)>footer:nth-of-type(3)>p   /*sub header*/
 }
 /**************************************************About Me************************************************************/
 
+.aboutmepadding
+{
+    padding-top:2%;
+}
 .layoutAbout
 {
     display:grid;
@@ -265,11 +270,11 @@ div:nth-child(6) p    /*Project name*/
     margin: auto;
     width: 60%;
     margin-top:2%;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 .projectImage {
-border-top-left-radius:20px;
-border-bottom-left-radius:20px;
+/*border-top-left-radius:20px;*/
+/*border-bottom-left-radius:20px;*/
 }
 .fontProject {
     font-size: 1.5rem;
@@ -304,7 +309,7 @@ a.fontProject
     margin: auto;
     width: 60%;
     margin-top:4%;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 
 
 }
@@ -318,7 +323,7 @@ a.fontProject
     margin: auto;
     width: 60%;
     margin-top:4%;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 #p1text    /*info of project 1*/
 {
