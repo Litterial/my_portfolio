@@ -3,6 +3,7 @@ html   /*controls scroll*/
     scroll-behavior:smooth;
     height: 100vh;
     width:100vw;
+    font-family: sans-serif;
 }
 
 html,body
@@ -15,9 +16,17 @@ div     /*all divs*/
 {
     text-align: center;
     padding-bottom: 5%;
-    font-family: sans-serif;
+
 }
 
+div:nth-of-type(odd)
+{
+   background: #7CBEE7;
+}
+div:nth-of-type(even)
+{
+    background:#e2e2e2;
+}
 
 /***************************************************Search Bar*********************************************************/
 #mainPage  /*background*/
@@ -124,28 +133,26 @@ a
     font-weight: bold;
     color: #e2e2e2;
     padding-top:2%;
-}
-footer:nth-of-type(2)   /*delays my name*/
-{
     animation-delay: 1s;
 }
 
-footer:nth-of-type(3)    /*delays sub-header for site*/
+
+section:nth-of-type(3)    /*delays sub-header for site*/
 {
     animation-delay:1.25s;
 }
 
-footer:nth-of-type(4)   /*delays PDF*/
+section:nth-of-type(4)   /*delays PDF*/
 {
     animation-delay:1.5s;
 }
 
 
-div:nth-of-type(1)>footer:nth-of-type(3)>p   /*sub header*/
+div:nth-of-type(1)>section:nth-of-type(3)>p   /*sub header*/
 {
     font-size: 2.3rem;
     text-align: center;
-    color: #eff3fa;
+    color: #e2e2e2;
 }
 
 #PDF
@@ -189,12 +196,11 @@ div:nth-of-type(1)>footer:nth-of-type(3)>p   /*sub header*/
 
 }
 
-div:nth-child(4)>p   /*About me title*/
+div .aboutmepadding  /*About me title*/
 {
 
     padding-left:2%;
     grid-column:1;
-    grid-row: 1/10;
     font-size: 2.3rem;
 }
 
@@ -202,7 +208,6 @@ div:nth-child(4)>article:nth-of-type(1)  /*About me paragraph*/
 {
 
     grid-column:2;
-    grid-row:1/5;
     font-size: 1.3rem;
     margin:6% 10% 0 0;
     text-align:left;
@@ -405,7 +410,7 @@ a.fontProject
     font-size:1.3rem;
 }
 
-article>p  /*Education title*/
+.educationTitle /*Education title*/
 {
 
     font-size:2.3rem;
