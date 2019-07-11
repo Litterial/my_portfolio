@@ -610,6 +610,7 @@ div:nth-child(8) p:nth-of-type(2)   /*audio sub-header*/
 {
     display:grid;
     grid-template-areas: "week sign";
+    grid-template-columns: 50% 50%;
 }
 
 .audioWeek
@@ -617,30 +618,36 @@ div:nth-child(8) p:nth-of-type(2)   /*audio sub-header*/
 grid-area: week;
 }
 
-.accordion button[aria-expanded="true"]::after{
+.audioSign
+{
     grid-area:sign;
+}
+
+.accordion button[aria-expanded="true"] .audioSign::after{
+    /*grid-area:sign;*/
     content:" \2796" ;
-    padding-left: 54%;
+    /*padding-left: 54%;*/
 }
-.accordion button[aria-expanded="true"][aria-controls="collapseTwo"]::after{
-    grid-area:sign;
-    content:" \2796" ;
-    padding-left: 54.3%;
-}
-.accordion button[aria-expanded="false"][aria-controls="collapseTwo"]::after{
-    grid-area:sign;
+/*.accordion button[aria-expanded="true"][aria-controls="collapseTwo"]::after{*/
+/*    grid-area:sign;*/
+/*    content:" \2796" ;*/
+/*    padding-left: 54.3%;*/
+/*}*/
+/*.accordion button[aria-expanded="false"][aria-controls="collapseTwo"]::after{*/
+/*    grid-area:sign;*/
+/*    content:" \2795" ;*/
+/*    padding-left: 54.3%;*/
+/*}*/
+.accordion button[aria-expanded="false"] .audioSign::after{
+    /*grid-area:sign;*/
     content:" \2795" ;
-    padding-left: 54.3%;
-}
-.accordion button[aria-expanded="false"]::after{
-    grid-area:sign;
-    content:" \2795" ;
-    padding-left: 54%;
+    /*padding-left: 54%;*/
 }
 .spaceBottom  /*space between audio controls and text in rows*/
 {
     margin-bottom:4%;
 }
+
 
 .audio
 {
