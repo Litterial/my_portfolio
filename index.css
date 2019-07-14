@@ -671,4 +671,25 @@ div:nth-child(9)>p    /*Contact*/
     padding-top: 4.082%;
 }
 
+.copyright
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 1.3rem;
+    background:#e2e2e2 ;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    vertical-align: middle;
+}
 
+.cp-name
+{
+    padding-left: .8%;
+}
+/******************************************************icon************************************************************/
+.icon
+{
+    width:25px;
+    height:25px;
+}
