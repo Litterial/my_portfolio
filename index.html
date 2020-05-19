@@ -3,54 +3,54 @@
 <head>
     <meta name='viewport' content='width=device-width, initial-scale=1.0' charset="UTF-8">
     <title>Welcome to JuwanMoore.com</title>
-
-
-    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
 
 </head>
 <body>
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="animate.css">
+ 
+<div id="mainPage" className="blue-white">
+    <input type ="checkbox" id="hamburger" />
+    <label id="hamburgerbox" for="hamburger">
+        <div></div>
+    </label> 
+    <nav class="slideInDown animated" id=navbar>
+        
+        <div>
+            <a href="#AboutMe" id = 'aboutLink'>About Me</a>
+            <a href="#Skills" id="skillsLink">Skills</a>
+            <a href="#Projects" id = 'projectsLink'>Projects</a>
+            <a href="#Education" id='educationLink'>Education</a>
+            <a href="#Codecrew" id = "codecrewLink">CodeCrew Audio Logs</a>
+            <a href="#Contact" id ='contactLink'>Contact Me</a>
+        </div>
+    </nav>
 
-<div id="mainPage">
-    <section class="slideInDown animated nav">
-        <section class="container">
-        <a href="#AboutMe" id = 'aboutLink'>About Me</a>
-        <a href="#Skills" id="skillsLink">Skills</a>
-        <a href="#Projects" id = 'projectsLink'>Projects</a>
-        <a href="#Education" id='educationLink'>Education</a>
-        <a href="#Codecrew" id = "codecrewLink">CodeCrew Audio Logs</a>
-        <a href="#Contact" id ='contactLink'>Contact Me</a>
-        </section>
-    </section>
+        <h1 id="myName" class="zoomIn animated">Juwan Moore</h1>
 
-    <section id='myName' class="zoomIn animated">
-        <p>JUWAN MOORE</p>
-    </section>
 
-    <section class="zoomIn animated">
+    <div id="myPosition" class="zoomIn animated">
         <p>Full-Stack Developer</p>
-    </section>
+    </div>
 
-    <section class="zoomIn animated">
-        <a href="Juwan%20Moore.pdf" download><button id="PDF">Downloadable Résumé (PDF)</button></a>
-    </section>
+        <a id="PDF" href="Juwan%20Moore.pdf" download target="_blank" class="zoomIn animated"><button >Downloadable Résumé (PDF)</button></a>
+   
 </div>
 
-<div id='AboutMe' class ='layoutAbout'>
+<div id='AboutMe' class ='layoutAbout blue-white'>
     <p class="aboutmepadding">About me</p>
     <article><p>I'm a full-stack developer and graduate of CodeCrew Code School currently living in Memphis, TN. Our tech-driven world ushers new trends and discoveries that we as developers must stay on top of. It is within this environement, I movitvate and challenge myself to relentless pursuit perfection and knowledge of this areas.</p>
     </article>
 </div>
-<div id="Skills" class="">
+<div id="Skills" class="blue-white">
     <p>Languages and Frameworks</p>
     <span>JavaScript</span><span>Java</span><span>Python</span><span>Django</span><span>jQuery</span><span>SQL</span><span>React.js</span>
     <br/><br/>
     <span>Node.js</span><span>MongoDB</span><span>AJAX</span><span>Spring Boot</span> <span>ThymeLeaf</span><span>Express</span>
 </div>
-<div id='Projects' class = ''>
+ <div id='Projects' class = 'blue-white'> 
     <p>Projects</p>
     <nav class = ''>
         <nav id='project1'><img class="projectImage" src="MathAlpha.png" alt="An image of the Clicking game">
@@ -79,8 +79,8 @@
         </nav>
     </nav>
 
-</div>
-<div id="Education" class="">
+</div> 
+ <div id="Education" class="blue-white"> 
     <article class="educationGrid">
         <p class="educationTitle">Education</p>
         <nav id="in-gridEd">
@@ -101,8 +101,8 @@
     </nav>
     </article>
 
-</div>
-<div id='Codecrew' class =''> <p>CodeCrew Audio Logs</p>
+</div> 
+ <div id='Codecrew' class ='blue-white'> <p>CodeCrew Audio Logs</p> 
     <p>Throughout my journey at the CodeCrew Code School, I've recorded weekly audio logs to share my thoughts and opinions about the course.</p>
 
     <section class="accordion" id="accordionExample">
@@ -225,9 +225,8 @@
         </section>
     </section>
 
-</div>
-
-<div id='Contact' class =''><p>Contact Me</p>
+</div> 
+ <div id='Contact' class ='blue-white'><p>Contact Me</p>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTIT68oVBhHE6Iqr2RAQX8DV7Uwo6EjMud1h7vPG1St9lQBw/viewform?embedded=true" width="640" height="790" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 </div>
@@ -242,7 +241,7 @@
 <a id="scrollUp" href="#mainPage"><img src="resizearrow.png"/></a>
 <footer>
 
-</footer>
+</footer> -->
 
 </body>
 <script src="index.js"></script>

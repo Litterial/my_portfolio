@@ -1,8 +1,8 @@
 html   /*controls scroll*/
 {
     scroll-behavior:smooth;
-    height: 100vh;
-    width:100vw;
+    /* height: 100vh;
+    width:100vw; */
     font-family: sans-serif;
 }
 
@@ -10,102 +10,137 @@ html,body
 {
 
     margin:0;
+    height: 100vh;
+    width:100vw;
     /*background-color:#87cefa ;*/
 }
-div     /*all divs*/
-{
-    text-align: center;
-    padding-bottom: 5%;
 
-}
-
-div:nth-of-type(odd)
+.blue-white:nth-of-type(odd)
 {
    background: #7CBEE7;
 }
-div:nth-of-type(even)
+.blue-white:nth-of-type(even)
 {
     background:#e2e2e2;
 }
 
-/***************************************************Search Bar*********************************************************/
-#mainPage  /*background*/
+
+
+input[id="hamburger"]{
+    /* visibility:hidden; */
+    display: none;
+    height: 0px;
+    width: 0px;
+ 
+}
+
+#mainPage  
 {
-    background: url(155022230133763752.png)no-repeat;
+    background: url(../public/images/header.png)no-repeat;
     background-size:cover;
     text-align: center;
 }
 
-.nav{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-/*grid for search*/
-.container {
-
+#navbar {
+    display: inline-block;
     background-color: #e2e2e2;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius:10px;
-    width: 45%;
-    padding:1% .1%;
+    padding:15px;
+    position: relative;
 }
 
-/*#aboutLink*/
-/*{*/
-/*    grid-column: 1;*/
-/*    grid-row: 1;*/
-/*}*/
-/*#skillsLink*/
-/*{*/
-/*    grid-column: 2;*/
-/*    grid-row: 1;*/
-/*}*/
-/*#projectsLink*/
-/*{*/
-/*    grid-column: 3;*/
-/*    grid-row: 1;*/
-/*}*/
-/*#educationLink*/
-/*{*/
-/*    grid-column: 4;*/
-/*    grid-row:1;*/
-/*}*/
-/*#codecrewLink*/
-/*{*/
-/*    grid-column:5;*/
-/*    grid-row: 1;*/
-/*}*/
-/*#contactLink*/
-/*{*/
-/*    grid-column:6;*/
-/*    grid-row: 1;*/
-/*}*/
-/*Margin for links*/
-a
-{
-    margin: 0 2%;
-    text-decoration-line: none;
-    font-size: 1rem;
+#navbar div{
+    display: inherit;
+}
+#navbar div a{
+    display: inherit;
+    padding:15px;
+    text-decoration: none;
     color:black;
 }
 
-/*settings when you hover a link*/
-#aboutLink:hover
-{   grid-column: 1;
-    grid-row:1;
-    background-color: black;
-    color:#e2e2e2;
-    padding:0;
+
+#navbar div a:hover{
+    background-color:#7CBEE7;
 }
 
-
-#projectsLink:hover,#educationLink:hover,#skillsLink:hover,#codecrewLink:hover,#contactLink:hover
+@media(max-width:767px)
 {
-    background-color: black;
-    color:#e2e2e2;
-    padding:0;
+    
+    input[id="hamburger"]:checked ~ #navbar{
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width:100vw;
+        font-size: 2em;
+        z-index: 1; 
+        overflow: hidden;       
+
+    }
+
+    #hamburgerbox div{
+        top:40%;
+        right: 5px;
+
+    }
+
+    #hamburgerbox div, #hamburgerbox div::before,#hamburgerbox div::after {
+        display: block;
+        position:absolute;
+        background:#7CBEE7;
+        border-radius:10px;
+        height:10px;
+        width: 50px;
+        margin:0;
+    }
+
+    #hamburgerbox div::before {
+        content:"";
+        transform:translateY(-20px);
+        -webkit-transform:translateY(-20px);
+    }
+
+    #hamburgerbox div::after {
+        content:"";
+        transform:translateY(20px);
+       -webkit-transform:translateY(20px);
+    }
+
+
+    #hamburgerbox
+    {
+        cursor:pointer;
+        background:white;
+        position:fixed;
+        top:10px;
+        right:10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        z-index: 2;
+
+
+    }
+    
+    #mainMenu{
+        padding:12% 0;
+    }
+    
+    #navbar{
+        display:none;
+        padding:80px 0 0 0;
+
+    }
+    #navbar div a{
+        padding:30px 0;
+        
+    }
+
+
 }
+
+
 
 /***********************************************Back to the top********************************************************/
 
@@ -126,25 +161,39 @@ a
 /**********************************************Other half of main page*************************************************/
 #myName
 {
-    font-size: 5rem;
+    /* display: inline-block; */
     margin-bottom: 0;
     font-family: 'Arial', 'Helvetica', sans-serif;
     font-weight: bold;
+    font-size:3.5em;
     color: #e2e2e2;
-    padding-top:2%;
     animation-delay: 1s;
+    padding-top:1%;
+    margin:0;
+
+}
+
+#myName h1{
+    margin:0;
 }
 
 
-section:nth-of-type(3)    /*delays sub-header for site*/
+@media (max-width:767px){
+    #myName h1
+    {
+        display: inline-block;
+        padding-top:60px;
+    }
+}
+#myPosition    /*delays sub-header for site*/
 {
+    font-size:2em;
+    font-weight: bold;
+    color: #e2e2e2;
     animation-delay:1.25s;
 }
 
-section:nth-of-type(4)   /*delays PDF*/
-{
-    animation-delay:1.5s;
-}
+
 
 
 div:nth-of-type(1)>section:nth-of-type(3)>p   /*sub header*/
@@ -154,8 +203,13 @@ div:nth-of-type(1)>section:nth-of-type(3)>p   /*sub header*/
     color: #e2e2e2;
 }
 
-#PDF
+ #PDF
 {
+    animation-delay: 1.73s;
+}
+#PDF button
+{
+    cursor: pointer;
     border-radius:10px;
     height: 20%;
     margin:1% 0;
@@ -166,12 +220,19 @@ div:nth-of-type(1)>section:nth-of-type(3)>p   /*sub header*/
     border: 5px solid #e2e2e2;
 }
 
-#PDF:hover
+#PDF button:hover
 {
     background: #e2e2e2;
     color: #7CBEE7;
     text-decoration-line: underline ;
 }
+
+#PDF button:focus
+{
+  outline:none;
+}
+
+
 /*****************************************Background for the Sections***************************************************/
 
 .light{
@@ -226,12 +287,7 @@ div:nth-child(4)>article:nth-of-type(2)    /*extra optional space in case I want
     padding-top:1%;
 }
 /****************************************************Skills************************************************************/
-div:nth-child(5)>p      /*Skills tittle*/
-{
-    font-size: 2.3rem;
-    margin-top:0;
-    padding-top: 4.082%;
-}
+
 
 
 div:nth-child(5)>span    /*Actual skills*/
