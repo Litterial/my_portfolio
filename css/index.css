@@ -61,7 +61,7 @@ input[id="hamburger"]{
 }
 
 
-#navbar div a:hover{
+#navbar div a:hover,#navbar div a:active{
     background-color:#7CBEE7;
 }
 
@@ -133,11 +133,19 @@ input[id="hamburger"]{
 
     }
     #navbar div a{
-        padding:30px 0;
+        padding:20px 0;
         
     }
 
 
+}
+
+@media(max-width:500px)
+{
+    #myName
+    {
+        font-size:2.2em
+    }
 }
 
 
@@ -161,7 +169,6 @@ input[id="hamburger"]{
 /**********************************************Other half of main page*************************************************/
 #myName
 {
-    /* display: inline-block; */
     margin-bottom: 0;
     font-family: 'Arial', 'Helvetica', sans-serif;
     font-weight: bold;
@@ -179,12 +186,52 @@ input[id="hamburger"]{
 
 
 @media (max-width:767px){
-    #myName h1
-    {
-        display: inline-block;
+    #myName{
         padding-top:60px;
     }
+    
 }
+
+@media (max-width:650px){
+   
+   #hamburgerbox{
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+   }
+
+   #hamburgerbox div {
+    top: 40%;
+    right: 2px;
+}
+   
+    #hamburgerbox div, #hamburgerbox div::before, #hamburgerbox div::after {
+    
+        height: 8px;
+        width: 45px;
+    }
+
+    #hamburgerbox div::before {
+     
+        transform:translateY(-15px);
+        -webkit-transform:translateY(-15px);
+    }
+
+    #hamburgerbox div::after {
+        transform:translateY(15px);
+       -webkit-transform:translateY(15px);
+    }
+
+    #myName
+    {
+        font-size:2.5em
+    }
+
+
+}
+
+
 #myPosition    /*delays sub-header for site*/
 {
     font-size:2em;
@@ -213,14 +260,14 @@ div:nth-of-type(1)>section:nth-of-type(3)>p   /*sub header*/
     border-radius:10px;
     height: 20%;
     margin:1% 0;
-    font-size:2rem;
+    font-size:2em;
     background: rgba(225,225,225,.0);
     color: #e2e2e2;
     font-weight: bold;
     border: 5px solid #e2e2e2;
 }
 
-#PDF button:hover
+#PDF button:hover, #PDF button:active
 {
     background: #e2e2e2;
     color: #7CBEE7;
@@ -232,7 +279,19 @@ div:nth-of-type(1)>section:nth-of-type(3)>p   /*sub header*/
   outline:none;
 }
 
+@media(max-width:650px)
+{
+    #myPosition, #PDF button{
+        font-size:1.5em
+    }
+}
 
+@media(max-width:500px)
+{
+    #myPosition, #PDF button{
+        font-size:1.2em
+    }
+}
 /*****************************************Background for the Sections***************************************************/
 
 .light{
